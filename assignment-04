@@ -17,7 +17,6 @@ int main() {
 
     net = gross - tax;    // Net Salary
 
-    // Output
     printf("\n--- Salary Details ---\n");
     printf("Basic Salary = %.2f\n", basic);
     printf("HRA = %.2f\n", hra);
