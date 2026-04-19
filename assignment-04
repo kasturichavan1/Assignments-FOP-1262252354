@@ -1,1 +1,30 @@
+#include <stdio.h>
 
+int main() {
+    float basic, hra, ta, gross, tax, net;
+
+    // Input basic salary
+    printf("Enter Basic Salary: ");
+    scanf("%f", &basic);
+
+    // Calculations
+    hra = 0.10 * basic;   // 10% HRA
+    ta  = 0.05 * basic;   // 5% TA
+
+    gross = basic + hra + ta;   // Gross Salary
+
+    tax = 0.02 * gross;   // 2% Professional Tax
+
+    net = gross - tax;    // Net Salary
+
+    // Output
+    printf("\n--- Salary Details ---\n");
+    printf("Basic Salary = %.2f\n", basic);
+    printf("HRA = %.2f\n", hra);
+    printf("TA = %.2f\n", ta);
+    printf("Gross Salary = %.2f\n", gross);
+    printf("Professional Tax = %.2f\n", tax);
+    printf("Net Salary = %.2f\n", net);
+
+    return 0;
+}
